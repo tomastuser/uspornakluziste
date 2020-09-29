@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #414141;
+}
+
+h1 {
+  margin-bottom: 8vh;
+  font-weight: 300;
+  font-size: 2.8rem;
+}
+
+h2 {
+  margin-bottom: 8vh;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+h3 {
+  margin-bottom: 4vh;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: lightgrey;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -7vh;
+  visibility: hidden;
+}
+
+button {
+  border-radius: 10px;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  border: solid 2px white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(10, 119, 216, 0.6);
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav {
+  position: fixed;
+  background-color: #343537;
+  width: 100%;
+  height: 7vh;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 10;
+}
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  margin-left: 0;
+}
+
+.navPhone {
+  display: block;
+}
+
+main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7vh;
+}
+
+.mainCont {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8vh;
+}
+
+.kon1 {
+  grid-column: 1/2;
+}
+.kon2 {
+  grid-column: 2/3;
+}
+.kon3 {
+  grid-column: 3/4;
+}
+.uvod {
+  background-image: url(./assets/vanoce2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0a77d8;
+  color: white;
+  height: 85vh;
+  padding-top: 8vh;
+}
+
+.uvod h1 {
+  margin-top: 12vh;
+  font-size: 4rem;
+}
+
+.uvod h2 {
+  margin-top: 12vh;
+  font-size: 2.3rem;
+}
+
+.uvod button {
+  margin-top: 3vh;
+}
+
+.zajistimeCont {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8vh;
+  color: #343537;
+}
+.zajistimeBody {
+  display: flex;
+  flex-direction: row;
+}
+
+.zajistimeBody h3 {
+  color: #0a77d8;
+}
+.zajistimeBody div {
+  padding: 3rem 2rem 2rem 2rem;
+}
+.zajistimeBody i {
+  font-size: 4rem;
+  margin-bottom: 6vh;
+  color: #0a77d8;
+}
+.nabidkaCont {
+  background-image: url(./assets/hokej.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0a77d8;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 8vh;
+}
+
+.nabidkaBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 0;
+  margin-bottom: 4vh;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.nabidkaBody div {
+  padding: 3rem 2rem 2rem 2rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: #0a77d8;
+  flex-basis: 200px;
+  flex-grow: 3;
+}
+.nabidkaBody i {
+  font-size: 4rem;
+  margin-bottom: 4vh;
+  color: white;
+}
+.kontakt {
+  padding-top: 8vh;
+}
+
+.kontaktBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  line-height: 2;
+}
+
+.kontakt h2 {
+  margin-bottom: 2vh;
+  color: #0a77d8;
+}
+
+.kontakt i {
+  font-size: 3rem;
+  margin-bottom: 4vh;
+  color: #0a77d8;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  color: white;
+  background-color: #0a77d8;
+}
+.footerButton {
+  position: fixed;
+  opacity: 0;
+  right: 20px;
+  bottom: 20px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.3rem;
+  background-color: #0a77d8;
+  color: white;
+  width: 75px;
+  height: 75px;
+  font-size: 2rem;
+  transition: opacity 0.5s, background-color 0.3s, color 0.3s;
+}
+
+.footerButton:hover {
+  background-color: #0a77d8;
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navLinks {
+    margin-left: 0%;
+    width: 50%;
+  }
+  .mainCont {
+    width: 80%;
+  }
+  .uvod h1 {
+    margin-top: 8vh;
+    font-size: 3.4rem;
+  }
+  .uvod h2 {
+    font-size: 2rem;
+    margin-top: 4vh;
+  }
+  .nabidkaGrid {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navLinks {
+    width: 80%;
+  }
+  .navPhone {
+    display: none;
+  }
+  .mainCont {
+    width: 90%;
+  }
+  .uvod h1 {
+    margin-top: 4vh;
+    font-size: 3rem;
+  }
+  .uvod h2 {
+    font-size: 2rem;
+    margin-top: 2vh;
+  }
+  .uvod button {
+    margin-top: 2vh;
+  }
+  .nabidkaGrid {
+    grid-template-columns: auto;
+    margin-bottom: 0vh;
+  }
+  .kontaktBody {
+    grid-template-columns: auto auto;
+  }
+  .kon1 {
+    grid-column: 1/3;
+    margin-bottom: 8vh;
+  }
+  .kon2 {
+    grid-column: 1/2;
+  }
+  .kon3 {
+    grid-column: 2/3;
+  }
+  .zajistimeBody div {
+    padding: 3rem 1rem 2rem 1rem;
+  }
+}
