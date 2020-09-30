@@ -80,6 +80,8 @@ nav {
   align-items: center;
   justify-content: space-around;
   width: 40%;
+  text-align: center;
+  font-size: 1rem;
   margin-left: 0;
 }
 
@@ -145,12 +147,18 @@ main {
 .zajistimeBody {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .zajistimeBody h3 {
   color: #0a77d8;
 }
+.zajistimeBody p {
+  text-align: left;
+}
 .zajistimeBody div {
+  flex-basis: 250px;
   padding: 3rem 2rem 2rem 2rem;
 }
 .zajistimeBody i {
@@ -234,8 +242,8 @@ footer {
   border-radius: 10px;
   border: none;
   font-size: 1.3rem;
-  background-color: #0a77d8;
-  color: white;
+  background-color: rgba(10, 119, 216, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   width: 75px;
   height: 75px;
   font-size: 2rem;
@@ -251,9 +259,13 @@ footer {
   .navLinks {
     margin-left: 0%;
     width: 50%;
+    font-size: 1.1rem;
   }
   .mainCont {
     width: 80%;
+  }
+  .uvod {
+    height: 85vh;
   }
   .uvod h1 {
     margin-top: 8vh;
@@ -263,23 +275,24 @@ footer {
     font-size: 2rem;
     margin-top: 4vh;
   }
-  .nabidkaGrid {
-    grid-template-columns: auto auto;
-  }
 }
 @media only screen and (max-width: 768px) {
   .navLinks {
     width: 80%;
+    font-size: 0.9rem;
   }
   .navPhone {
     display: none;
   }
   .mainCont {
-    width: 90%;
+    width: 85%;
+  }
+  .uvod {
+    height: 100vh;
   }
   .uvod h1 {
     margin-top: 4vh;
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
   .uvod h2 {
     font-size: 2rem;
@@ -287,10 +300,6 @@ footer {
   }
   .uvod button {
     margin-top: 2vh;
-  }
-  .nabidkaGrid {
-    grid-template-columns: auto;
-    margin-bottom: 0vh;
   }
   .kontaktBody {
     grid-template-columns: auto auto;
@@ -307,5 +316,24 @@ footer {
   }
   .zajistimeBody div {
     padding: 3rem 1rem 2rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .uvod {
+    height: 85vh;
+  }
+  .uvod h1 {
+    margin-top: 8vh;
+    font-size: 2rem;
+  }
+  .uvod h2 {
+    font-size: 1.2rem;
+    margin-top: 4vh;
+  }
+  .uvod button {
+    margin-top: 8vh;
+    padding: 1rem;
+    font-size: 1rem;
   }
 }
