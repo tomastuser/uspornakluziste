@@ -194,8 +194,7 @@ main {
   margin: 1rem;
   border-radius: 10px;
   background-color: #0a77d8;
-  flex-basis: 200px;
-  flex-grow: 3;
+  flex-basis: 240px;
 }
 .nabidkaBody i {
   font-size: 4rem;
@@ -206,10 +205,21 @@ main {
   padding-top: 8vh;
 }
 
+.kontakt a {
+  color: #343537;
+}
+
 .kontaktBody {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   line-height: 2;
+}
+
+.kontaktBody div {
+  flex-basis: 300px;
+  margin-bottom: 8vh;
 }
 
 .kontakt h2 {
@@ -226,7 +236,8 @@ main {
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  text-align: center;
   align-items: center;
   padding-top: 3vh;
   padding-bottom: 3vh;
@@ -335,5 +346,8 @@ footer {
     margin-top: 8vh;
     padding: 1rem;
     font-size: 1rem;
+  }
+  .down {
+    bottom: 10%;
   }
 }
