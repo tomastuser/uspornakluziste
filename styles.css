@@ -119,7 +119,7 @@ main {
   background-size: cover;
   background-color: #0a77d8;
   color: white;
-  height: 85vh;
+  min-height: 85vh;
   padding-top: 8vh;
 }
 
@@ -151,6 +151,9 @@ main {
   justify-content: center;
 }
 
+.zajistimeCont h1 {
+  margin-bottom: 0vh;
+}
 .zajistimeBody h3 {
   color: #0a77d8;
 }
