@@ -279,7 +279,7 @@ footer {
     width: 80%;
   }
   .uvod {
-    height: 85vh;
+    min-height: 85vh;
   }
   .uvod h1 {
     margin-top: 8vh;
@@ -302,7 +302,7 @@ footer {
     width: 85%;
   }
   .uvod {
-    height: 100vh;
+    min-height: 100vh;
   }
   .uvod h1 {
     margin-top: 4vh;
@@ -335,7 +335,7 @@ footer {
 
 @media only screen and (max-width: 350px) {
   .uvod {
-    height: 85vh;
+    min-height: 85vh;
   }
   .uvod h1 {
     margin-top: 8vh;
